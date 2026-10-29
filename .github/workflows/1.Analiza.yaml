@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - '*.csv'
-      - 'paco_portofolio_analysis.py'
+      - 'paco_analysis.py'
   workflow_dispatch:
 
 jobs:
@@ -32,7 +32,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          python paco_portofolio_analysis.py
+          python paco_analysis.py
 
       - name: Commit and push updated Markdown report
         run: |
