@@ -30,7 +30,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # Path to the csv file containing your portfolio holdings.
 # For now, the script expects the file to be in the same folder as this script.
-CSV_FILE = Path(__file__).parent / "paco_portfolio_20260517.csv"
+CSV_FILE = Path(__file__).parent / "paco_2026.csv"
 
 # user-friendly labels for each analysis period.
 # These correspond to the period codes that Yahoo Finance manages.
